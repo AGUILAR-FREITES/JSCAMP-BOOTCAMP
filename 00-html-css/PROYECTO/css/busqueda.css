@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente */
+
+@font-face {
+    font-family:"Inter" ;
+    src: url(/00-html-css/fonts/Inter-VariableFont_opsz\,wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --primary:#1173d4;
+    --primary-dark: #0a3d66;
+    --primary-hover:#0d5ba8;
+    --primary-light:#09f;
+    /* --background: #06182a; */
+    --background: #101922;
+    --text-primary: #ffffff;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+    --border: #ffffff1a;
+    --card-bg: #1e293b;
+    --shadow: #0000004d;
+    --input-bg: #1e293b;
+    --hsla-example: hsla(210, 100%, 56%, 1);
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+body{
+    /* font-family: system-ui; */
+    font-family: 'Inter';
+    background-color:  var(--background);
+    color: var(--text-primary);
+    min-height: 100vh;  /*total de la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    /* text-align: center; */
+}
+
+
+
+/* INICIO HEADER */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--border);
+    /* justify-content: space-between; */
+
+    .cont-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1216px;
+        height: 4rem;
+        
+        .cont-nav-logo{
+            display: flex;
+            gap: 2rem;
+
+            .logo-devjob{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                
+                svg{
+                    width: 32px;
+                    height: 32px;
+                    color: var(--primary);
+                    font-weight: 900;
+                    
+                }
+    
+                span{
+                    margin-left: 9px;
+                    font-family: 'Inter';
+                    font-weight: 900;
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                }
+                
+            }
+    
+            nav{
+                line-height: 40px;
+                
+                    
+                ul{
+                    display: flex;
+                    list-style: none;
+                    gap: 24px;
+                        
+                    li{
+                        a{
+                            color: white;
+                            font-size: 14px;
+                            font-family: 'Inter';
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+        .reg-header{
+            width: 148px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+
+            .btn-cv{
+                width: 91px;
+                height: 36px;
+                background: rgb(10 61 102/ 0.5);
+                opacity: 1;
+                font-size: 14px;
+                border: none;
+                border-radius: 8px;
+                color: rgb(17 115 212/ 0.8);
+                font-weight: 700;
+                font-family: 'Inter';
+            }
+
+            .img-header{
+                background-image: url(../img/Avatar.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                border-radius: 100%;
+                width: 45px;
+                height: 45px;
+            }
+
+        }
+    } 
+}
+
+/* FIN HEADER */
+
+
+/* INICIO TEXTO TITULO */
+
+main{
+    /* width: 100%; */
+    width: 1120px;
+    margin: 0 auto;
+    /* margin-top: 40px; */
+    padding: 48px;
+
+    .container{
+        /* width: 1024px; */
+        margin: 0 auto;
+
+        .text-titulo{
+            text-align: center;
+            margin-bottom: 48px;
+            
+            h1{
+                font-size: 48px;
+            }
+
+            p{
+                font-size: 18px;
+            }
+        }
+
+        .cont-form{
+            display: flex;
+            align-items: center;
+            height: 50px;
+            background: #1f293780;
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+
+            form{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                
+
+                a{
+                    display: flex;
+                    margin-left: 10px;
+                    color: var(--text-muted);
+                    font-weight: 900;
+                    
+
+                }
+
+                input{
+                    width: 975px;
+                    height: 40px;
+                    background: #1f293780;
+                    border-radius: 0.5rem;
+                    border: none;
+                    outline: none;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    
+                    
+                }
+
+                
+
+                input::placeholder{
+                    color: var(--text-muted);
+                    opacity: 0.5;
+                    cursor: text;
+                }
+
+                input:focus{
+                    color: white;
+                    font-size: 18px;
+                }
+
+                
+            }
+        }
+    }
+}
+
+/* FIN TEXTO TITULO */
+
+
