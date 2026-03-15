@@ -177,6 +177,8 @@ main{
             
             h1{
                 font-size: 48px;
+                font-weight: 900;
+                letter-spacing: 1px;
             }
 
             p{
@@ -200,10 +202,16 @@ main{
 
                 a{
                     display: flex;
-                    margin-left: 10px;
+                    margin-left: 15px;
                     color: var(--text-muted);
-                    font-weight: 900;
                     
+                    
+                    svg{
+                        width: 20px;
+                        margin-right: -10px;
+                        margin-top: -4px;
+                        
+                    }
 
                 }
 
@@ -236,9 +244,77 @@ main{
                 
             }
         }
+
+        .cont-busqueda{
+            width: 100%;
+            
+            nav{
+                width: 1024px;
+
+
+                ul{
+                    display: flex;
+                    width: 1024px;
+                    list-style: none;
+                    gap: 20px;
+
+                    li:hover{
+                            background: #4c5d7680;
+                        }
+                        
+                    li{
+                        display: flex;
+                        height: 40px;
+                        background: #37415180;
+                        padding: 8px 16px;
+                        margin-top: 30px;
+                        box-sizing: border-box;
+                        border-radius: 0.5rem;
+
+                        a{
+                            color: white;
+                            font-size: 14px;
+                            height: 40px;
+                            font-family: 'Inter';
+                            font-weight: 500;
+                        }
+
+                        svg{
+                            width: 16px;
+                            height: 24px;
+                            margin-left: 10px;
+                            
+                            }
+
+
+                            
+
+                    }
+
+                
+
+                }
+
+                
+
+                
+
+            
+            }
+
+        }
     }
 }
 
 /* FIN TEXTO TITULO */
+
+
+/* INICIO ARTÍCULOS */
+
+.cont-art{
+    margin-top: 30px;
+}
+
+/* FIN ARTÍCULOS */
 
 
