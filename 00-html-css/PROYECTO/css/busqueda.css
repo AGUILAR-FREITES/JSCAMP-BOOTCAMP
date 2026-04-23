@@ -257,43 +257,48 @@ main{
         .cont-busqueda{
             width: 100%;
             
-            nav{
+            .nav{
                 width: 1024px;
 
 
-                ul{
+                .ul{
                     display: flex;
-                    width: 1024px;
+                    /* width: 1024px; */
                     list-style: none;
                     gap: 20px;
+                    
 
-                    li:hover{
+                    li, select:hover{
                             background: #4c5d7680;
                         }
                         
-                    li{
+                    li, select{
                         display: flex;
                         height: 40px;
                         background: #37415180;
-                        padding: 8px 16px;
+                        /* padding: 8px 16px; */
                         margin-top: 30px;
-                        box-sizing: border-box;
+                        /* box-sizing: border-box; */
                         border-radius: 0.5rem;
+                        color: white;
+                        text-align: center;
 
-                        a{
+                        a, option{
                             color: white;
                             font-size: 14px;
                             height: 40px;
                             font-family: 'Inter';
                             font-weight: 500;
+                            background: #37415180;
+                            
                         }
 
-                        svg{
+                        /* svg{
                             width: 16px;
                             height: 24px;
                             margin-left: 10px;
                             
-                            }
+                            } */
 
 
                             
@@ -322,26 +327,43 @@ main{
 
 .cont-art{
     margin-top: 30px;
-
+    
     h2{
         margin-bottom: 30px;
     }
+
+    article:nth-child(2){
+            border-start-end-radius: 1rem;
+            border-start-start-radius: 1rem;
+            
+        }
+    article:nth-child(5){
+            border-end-end-radius: 1rem;
+            border-end-start-radius: 1rem;
+            
+        }
+
+
 
     article:hover{
         background: #1f293780;
         transition: 300ms;
     }
 
+    
+
     article{
         display: flex;
         border: 1px solid var(--border);
         padding: 20px;
+
 
         div{
             width: 869px;
             p:nth-child(2){
             color: #9CA3AF;
             margin-bottom: 10px;
+            
         }
             h3{
                 font-size: 18px;
@@ -372,6 +394,8 @@ main{
 
         
     }
+
+    
 }
 
 /* FIN ARTÍCULOS */
@@ -386,19 +410,7 @@ main{
     align-items: center;
     margin-top: 40px;
 
-    .pas-pagina:hover{
-        width: 40px;
-        height: 40px;
-        background: #4c5d7680;
-        border-radius: 0.5rem;
-        border: none;
-        cursor: pointer;
-        
-                svg{
-                    text-align: center;
-                    margin: 8px;
-                }
-            }
+   
 
     .pas-pagina{
         width: 40px;
@@ -406,6 +418,22 @@ main{
         color: white;
         text-align: center;
         line-height: 50px;
+        transition: all 0.3s;
+        
+        
+        &:hover{
+            width: 40px;
+            height: 40px;
+            background: #4c5d7680;
+            border-radius: 0.5rem;
+            border: none;
+            cursor: pointer;
+        
+                svg{
+                    text-align: center;
+                    margin: 8px;
+                }
+        }
     }
     
     ul{
@@ -422,13 +450,7 @@ main{
             border: none;
         }
 
-        li:not(:first-child):hover{
-
-                background: #4c5d7680;
-                border-radius: 0.5rem;
-                border: none;
-                cursor: pointer;
-            }
+        
         
         li{
             width: 40px;
@@ -436,6 +458,13 @@ main{
             text-align: center;
             line-height: 36px;
             
+            &:not(:first-child):hover{
+
+                background: #4c5d7680;
+                border-radius: 0.5rem;
+                border: none;
+                cursor: pointer;
+            }
             
             a{
                 color: white;
@@ -443,12 +472,16 @@ main{
                 font-weight: 500;
             }
 
-            
         }
 
         
     }
 }
 /* FIN INDICE */
+
+
+#boton-importante{
+    background: #0d5ba8;
+}
 
 

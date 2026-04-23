@@ -346,7 +346,7 @@ svg{
                     border: none;
                     outline: none;
                     
-            }
+                }
 
                 input:focus{
                         color: white;
@@ -358,18 +358,21 @@ svg{
                         opacity: 0.5;
                     }
 
-            button{
-                width: 102px;
-                height: 48px;
-                margin-top: 6px;
+                button{
+                    width: 102px;
+                    height: 48px;
+                    margin-top: 6px;
+                    
+                    &:hover,
+                    &:focus{
+                        cursor: pointer;
+                        background-color: var(--primary-hover);
+                        outline: 2px solid white;
+                        outline-offset: 2px;
+                    }
+                }
             }
-            button:hover{
-                cursor: pointer;
-            }
-
-        
         }
-    }
     
     
 }
